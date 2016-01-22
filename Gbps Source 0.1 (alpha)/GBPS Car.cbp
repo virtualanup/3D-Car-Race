@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GBPS Car" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\GBPS Car" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lSOIL -lfreeglut -lglu32 -lopengl32" />
+					<Add library="..\..\..\..\..\programming\languages\C++\CodeBlocks\MinGW\lib\libwinmm.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\GBPS Car" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lSOIL -lfreeglut -lglu32 -lopengl32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Os" />
+			<Add option="-O3" />
+			<Add option="-O2" />
+			<Add option="-O1" />
+			<Add option="-O" />
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="-s" />
+		</Linker>
+		<Unit filename="car.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="car.h" />
+		<Unit filename="common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="common.h" />
+		<Unit filename="game.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="game.h" />
+		<Unit filename="glm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="glm.h" />
+		<Unit filename="init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="init.h" />
+		<Unit filename="linkedlist.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="linkedlist.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mainmenu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mainmenu.h" />
+		<Unit filename="object.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="object.h" />
+		<Unit filename="resources.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="resources.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
